@@ -1,6 +1,7 @@
 # configured aws provider with proper credentials
 provider "aws" {
   region  = "ap-southeast-1"
+  profile = "terraform-user"
 }
 
 
@@ -11,7 +12,7 @@ terraform {
     bucket = "ahk-terraform-state-file-bucket"
     key = "build/terraform.tfstate"
     region = "ap-southeast-1"
-   # profile = "value"
+    profile = "terraform-user"
     
   }
 }
