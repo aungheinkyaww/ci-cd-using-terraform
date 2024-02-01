@@ -1,7 +1,6 @@
 # configured aws provider with proper credentials
 provider "aws" {
   region  = "ap-southeast-1"
-  profile = "ahk_admin"
 }
 
 
